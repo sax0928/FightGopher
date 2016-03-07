@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/completeview">
+
+    <TextView
+        android:id="@+id/txtGameOver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:text="@string/GameOver"
+        android:textSize="45sp" />
+
+    <Button
+        android:id="@+id/btnGameOver_RestGame"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/txtGameOver"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/customborder"
+        android:backgroundTint="#ffffff"
+        android:text="@string/RestGame"
+        android:textSize="19sp" />
+
+    <Button
+        android:id="@+id/btnGameOver_BackToIndex"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/btnGameOver_RestGame"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/customborder"
+        android:backgroundTint="#ffffff"
+        android:text="@string/GoBackIndex"
+        android:textSize="19sp" />
+
+</RelativeLayout>

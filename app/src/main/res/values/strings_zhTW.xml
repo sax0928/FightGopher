@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">FightGopher</string>
+    <string name="playgame">Play</string>
+    <string name="leaderboard">RANKING</string>
+    <string name="introduction">about</string>
+    <string name="StartString">Start</string>
+    <string name="PauseString">Pause</string>
+    <string name="decreaseheart"> - 1</string>
+    <string name="GameOver">Game Over</string>
+    <string name="increase"> + 1 </string>
+    <string name="clearbutton">清除紀錄</string>
+    <string name="clearstring">這動作將會清除所有紀錄</string>
+    <string name="accuratePercent">準確擊中 : %d %%</string>
+    <!--  Action Buttom-->
+    <string name="GoBackIndex">回到首頁</string>
+    <string name="RestGame">重頭開始</string>
+    <string name="BackToSeeResult">看計分板</string>
+    <!--LevelActivity common-->
+    <string name="sure">確定</string>
+    <string name="canel">取消</string>
+    <string name="getsbestscore1">Best:</string>
+    <string name="getsbestscore2"> %d</string>
+    <string name="LV1">FightGopher - Level 1</string>
+    <string name="LV2">FightGopher - Level 2</string>
+    <string name="LV3">FightGopher - Level 3</string>
+    <string name="bestscore">你刷新Level %d 紀錄</string>
+    <string name="award_heart">  剩餘  %1$d  X  %2$d    = %3$d</string>
+    <string name="getpoint">得分</string>
+    <string name="totalscoreis">總得分 :  %d</string>
+    <!-- LevelOneActivity -->
+    <string name="LV1score">Level 1 得分 :%2d</string>
+    <!-- LevelOneActivity -->
+    <string name="LV2score">Level 2 得分 :%2d</string>
+    <!-- LevelThreeActivity -->
+    <string name="LV3score">Level 3 得分 :%2d</string>
+    <string name="finish">Completion</string>
+    <string name="andthen">你想要?</string>
+    <string name="savedone">儲存完畢 !</string>
+    <string name="confirmifusernameisempty">在這裡填入名字</string>
+    <string name="afterFinishAndLeadrBoardUpdate">Congratulation !!!!!!!!\n你達成新紀錄\n排行榜第 %d 名</string>
+    <string name="bestscoreToast">Level %1$d 歷史高分: %2$d 最新分數: %3$d</string>
+</resources>

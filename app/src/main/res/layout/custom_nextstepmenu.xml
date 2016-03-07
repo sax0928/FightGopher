@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/completeview">
+
+<ImageView
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:src="@drawable/icon_info"
+    android:layout_marginTop="8dp"
+    android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:layout_marginTop="8dp"
+        android:text="@string/andthen"
+        android:layout_gravity="center_horizontal"/>
+    <RadioGroup
+        android:layout_marginTop="8dp"
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+        <RadioButton
+            android:id="@+id/radio_backtoseeresult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/BackToSeeResult"
+            android:checked="false" />
+        <RadioButton
+            android:id="@+id/radio_resetgame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/RestGame"
+            android:checked="false" />
+        <RadioButton
+            android:id="@+id/radio_backtoindex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/GoBackIndex"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <ImageButton
+        style="@style/CreateName"
+        android:id="@+id/imgBtnNextStepOK"
+        android:background="@drawable/icon_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

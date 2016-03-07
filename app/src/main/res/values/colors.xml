@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_green">#1C86EE</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="parentHolderColor">#E9E3E6</color>
+    <color name="childHolderColor">#d7d7d8</color>
+    <color name="childHolderTextColor">#B2967D</color>
+    <color name="leaderboardBG">#e5e5e5</color>
+    <color name="afterflicker">#FF6347</color>
+    <color name="black">#000000</color>
+    <color name="white">#fafafa</color>
+    <color name="white_pressed">#fafafa</color>
+    <color name="half_black">#808080</color>
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="avtionbarmenu">#3399ff</color>
+    <color name="completeview">#c9c9c9</color>
+    <color name="linecolor">#8B4513</color>
+    <color name="accuratePercent">#FDE74C</color>  <!-- 準確率字體顏色-->
+    <color name="bgcolor">#d9d9d9</color>
+    <!--首頁三個按鈕顏色-->
+    <color name="btn1">#E85858</color>
+    <color name="btn2">#25B7D3</color>
+    <color name="btn3">#2EC4B6</color>
+    <!-- 遊戲介面-->
+    <color name="interface1">#011627</color>
+    <color name="interface2">#FF9F1C</color>
+    <color name="interface3">#bdc3c7</color>
+    <color name="interface4">#E71D36</color>
+    <color name="countdownbg">#2D3142</color>
+</resources>

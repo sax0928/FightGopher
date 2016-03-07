@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    tools:context=".activityclass.FinishGameActivity">
+
+    <ImageView
+        android:id="@+id/createnameAward"
+        style="@style/CreateName"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/icon_award" />
+
+    <TextView
+        android:id="@+id/showLV1Score"
+        style="@style/CreateName"
+        android:layout_alignStart="@+id/showLV3Score"
+        android:layout_below="@+id/createnameAward"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:tag="1"
+        android:text="@string/LV1score"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/showLV2Score"
+        style="@style/CreateName"
+        android:layout_alignStart="@+id/showLV1Score"
+        android:layout_below="@+id/showLV1Score"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:tag="2"
+        android:text="@string/LV2score"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/showLV3Score"
+        style="@style/CreateName"
+        android:layout_below="@+id/showLV2Score"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:tag="3"
+        android:text="@string/LV3score"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/linstar01"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/showLV1Score"
+        android:layout_alignStart="@+id/linstar02"
+        android:layout_alignTop="@+id/showLV1Score"
+        android:layout_toEndOf="@+id/showLV1Score"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/imgStar1"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/imgStar2"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/imgStar3"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linstar02"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/showLV2Score"
+        android:layout_alignTop="@+id/showLV2Score"
+        android:layout_toEndOf="@+id/imageView4"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/imgStar4"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/imgStar5"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/imgStar6"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linstar03"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/showLV3Score"
+        android:layout_alignStart="@+id/linstar02"
+        android:layout_alignTop="@+id/showLV3Score"
+        android:layout_toEndOf="@+id/imageView4"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/imgStar7"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/imgStar8"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/imgStar9"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imgBtnOK"
+        style="@style/CreateName"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtTotalScore"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/icon_ok"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/heart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtAwardScore"
+        android:layout_toStartOf="@+id/showLV3Score"
+        android:background="@drawable/heart"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/txtAwardScore"
+        style="@style/CreateName"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_alignStart="@+id/showLV3Score"
+        android:layout_below="@+id/showLV3Score"
+        android:gravity="center_vertical"
+        android:text="@string/award_heart"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/imgLine"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/heart"
+        android:layout_marginTop="3dp"
+        android:background="@color/linecolor" />
+
+    <TextView
+        android:id="@+id/txtTotalScore"
+        style="@style/CreateName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgLine"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:gravity="center_horizontal"
+        android:text="@string/totalscoreis"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtTotalScore"
+        android:layout_toEndOf="@+id/txtTotalScore" />
+
+</RelativeLayout>

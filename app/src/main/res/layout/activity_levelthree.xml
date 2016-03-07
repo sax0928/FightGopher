@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LV3_relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".activityclass.LevelThreeActivity">
+
+    <fragment
+        android:id="@+id/LV3_ftagmentGameStart"
+        android:name="project.fightgopher.FragmentGameMenu"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_margin="0dp"
+        android:layout_marginTop="0dp" />
+
+
+    <ImageView
+        android:id="@+id/LV3_imgCountingNumber"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/LV3_ftagmentGameStart"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/countdownbg" />
+
+    <LinearLayout
+        android:id="@+id/Lin01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LV3_ftagmentGameStart"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/LV3_hole01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/hole_1" />
+
+        <ImageView
+            android:id="@+id/LV3_hole02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/hole_1" />
+
+        <ImageView
+            android:id="@+id/LV3_hole03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/hole_1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Lin02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Lin01"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <ImageView
+            android:id="@+id/LV3_hole04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/hole_1" />
+
+        <ImageView
+            android:id="@+id/LV3_hole05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:src="@drawable/hole_1" />
+
+        <ImageView
+            android:id="@+id/LV3_hole06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/hole_1" />
+
+        <ImageView
+            android:id="@+id/LV3_hole07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/hole_1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Lin03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Lin02"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/LV3_hole08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/hole_1" />
+
+        <ImageView
+            android:id="@+id/LV3_hole09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/hole_1" />
+
+        <ImageView
+            android:id="@+id/LV3_hole10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/hole_1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Lin04"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Lin03"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <ImageView
+            android:id="@+id/LV3_hole11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/hole_1" />
+
+        <ImageView
+            android:id="@+id/LV3_hole12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:src="@drawable/hole_1" />
+
+        <ImageView
+            android:id="@+id/LV3_hole13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/hole_1" />
+
+        <ImageView
+            android:id="@+id/LV3_hole14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/hole_1" />
+
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/fragmentTimeBar"
+        android:name="project.fightgopher.FragmentTimeBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
+
+</RelativeLayout>

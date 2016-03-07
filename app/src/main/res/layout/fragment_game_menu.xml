@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".FragmentGameMenu">
+
+    <TextView
+        android:id="@+id/LEVEL"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:text="LEVEL -"
+        android:textColor="@color/interface1"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtlevelnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/LEVEL"
+        android:paddingTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/interface2"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/interface3"
+        android:textSize="100sp" />
+
+
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/LEVEL"
+        android:layout_below="@+id/txtlevelnumber"
+        android:singleLine="true"
+        android:text="@string/getsbestscore1"
+        android:textColor="@color/interface1"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtBestScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtlevelnumber"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/txt1"
+        android:singleLine="true"
+        android:text="@string/getsbestscore2"
+        android:textColor="@color/interface2"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

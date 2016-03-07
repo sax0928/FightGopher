@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/completeview">
+
+    <ImageView
+        android:id="@+id/imgCheck"
+        style="@style/CreateName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/icon_check" />
+
+    <TableLayout
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/imgCheck">
+
+        <TableRow android:weightSum="2">
+
+            <TextView
+                android:id="@+id/txt"
+                style="@style/CreateName"
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/getpoint" />
+
+            <TextView
+                android:id="@+id/txtCheck1"
+                style="@style/CreateName"
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/getpoint" />
+        </TableRow>
+
+        <TableRow android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/imgHeart"
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:visibility="invisible"
+                android:src="@drawable/heart" />
+
+            <TextView
+                android:id="@+id/txtAward"
+                android:textSize="20sp"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_vertical"
+                android:visibility="invisible"
+                android:text="@string/increase" />
+        </TableRow>
+    </TableLayout>
+
+
+    <TextView
+        android:id="@+id/txtCheck2"
+        style="@style/CreateName"
+        android:text="@string/LV1score"
+        android:visibility="invisible"
+        android:layout_below="@+id/accuratePercent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp" />
+
+    <ImageButton
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_ok"
+        android:layout_below="@+id/txtCheck2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        style="@style/CreateName"
+        android:id="@+id/accuratePercent"
+        android:text="@string/accuratePercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/grid"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

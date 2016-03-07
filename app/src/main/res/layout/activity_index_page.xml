@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/index_relat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d9d9d9"
+    tools:context=".activityclass.IndexPage">
+
+    <LinearLayout
+        android:id="@+id/linearindex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#9e9e9e">
+
+        <ImageView
+            android:id="@+id/indextittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/index_tittle01"
+            android:backgroundTint="#ffffff" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnStartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/customindexplay"
+        android:drawableLeft="@drawable/index_play"
+        android:drawablePadding="30dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:text="@string/playgame"
+        android:textAllCaps="true"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:textStyle="italic|bold"
+        android:layout_below="@+id/linearindex"
+        android:layout_alignStart="@+id/btnRanking"
+        android:layout_marginTop="100dp"
+        android:layout_alignEnd="@+id/btnRanking" />
+
+    <Button
+        android:id="@+id/btnRanking"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:background="@drawable/customindex"
+        android:drawablePadding="30dp"
+        android:drawableStart="@drawable/index_icon"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:text="@string/leaderboard"
+        android:textAllCaps="true"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:textStyle="italic|bold"
+        android:layout_below="@+id/btnStartButton"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

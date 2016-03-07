@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp"
+    android:layout_marginTop="8dp"
+    android:layout_margin="5dp"
+    android:backgroundTint="#E5E6E4"
+    android:background="@drawable/customborder">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rank"
+        android:textSize="24sp"
+        android:id="@+id/txtParentName"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Name"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtName" />
+
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgParentArrow"
+        android:src="@drawable/selector_arrow_down"
+        android:layout_alignBottom="@+id/txtName"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

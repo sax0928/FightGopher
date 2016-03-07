@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="project.fightgopher">
+
+    <uses-sdk
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:screenOrientation="landscape"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activityclass.IndexPage"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activityclass.LevelOneActivity" />
+        <activity
+            android:name=".activityclass.LevelTwoActivity" />
+        <activity
+            android:name=".activityclass.LevelThreeActivity" />
+        <activity android:name=".activityclass.ExpandRecycleViewActivity" />
+        <activity android:name=".activityclass.FinishGameActivity" />
+    </application>
+
+</manifest>

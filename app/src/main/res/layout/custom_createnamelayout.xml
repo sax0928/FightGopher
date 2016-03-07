@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/createnamelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/completeview">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/icon_status"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"/>
+
+    <TextView
+        android:id="@+id/createnameTittle"
+        style="@style/CreateName"
+        android:text="Test"
+        android:textSize="25sp"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/editCreateName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:ems="10"
+        android:hint="@string/confirmifusernameisempty"
+        android:inputType="textPersonName|textCapSentences"
+        android:layout_below="@+id/createnameTittle" />
+
+    <ImageButton
+        android:id="@+id/btnSave"
+        style="@style/CreateName"
+        android:background="@drawable/icon_ok"
+        android:layout_below="@+id/editCreateName"
+        android:layout_toStartOf="@+id/imageView2" />
+
+    <ImageButton
+        android:id="@+id/btnNoSave"
+        style="@style/CreateName"
+        android:background="@drawable/icon_nosave"
+        android:layout_below="@+id/editCreateName"
+        android:layout_toEndOf="@+id/imageView2" />
+
+</RelativeLayout>
